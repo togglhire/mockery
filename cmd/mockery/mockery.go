@@ -64,7 +64,7 @@ func main() {
 			limitOne = true
 		}
 	} else if config.fAll {
-		recursive = true
+		recursive = config.fRecursive
 		filter = regexp.MustCompile(".*")
 	} else {
 		fmt.Fprintln(os.Stderr, "Use -name to specify the name of the interface or -all for all interfaces found")

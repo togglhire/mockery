@@ -156,14 +156,14 @@ The `-name` option takes either the name or matching regular expression of inter
 
 It's common for a big package to have a lot of interfaces, so mockery provides `-all`.
 This option will tell mockery to scan all files under the directory named by `-dir` ("." by default)
-and generates mocks for any interfaces it finds. This option implies `-recursive=true`.
+and generates mocks for any interfaces it finds.
 
 `-all` was designed to be able to be used automatically in the background if required.
 
 ### Recursive
 
 Use the `-recursive` option to search subdirectories for the interface(s).
-This option is only compatible with `-name`. The `-all` option implies `-recursive=true`.
+This option is only compatible with `-name`.
 
 ### Output
 
